@@ -17,8 +17,8 @@ class Person2 {
 
 public class OOPEx08 {
     public static void main(String[] args) {
-        Person3 s1 = new Person3("홍길동", 170, 70);
-        Person3 s2 = new Person3("임꺽정", 150, 200);
+        Person2 s1 = new Person2("홍길동", 170, 70);
+        Person2 s2 = new Person2("임꺽정", 150, 200);
 
         System.out.println(s1.name);
         System.out.println(s2.name);

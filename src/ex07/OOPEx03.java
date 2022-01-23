@@ -9,7 +9,7 @@ class 마법사 {
     // 1. 행위는 행위 안에 추가할 수 없다.
     // 2. 행위는 메서드 이름(){}로 만들어진다.
     void drink() {
-        System.out.println("에너지 마시기");
+        System.out.println("포션 마시기");
         hp = 100;
     }
 }
