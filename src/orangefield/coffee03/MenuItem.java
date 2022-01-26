@@ -1,8 +1,8 @@
 package orangefield.coffee03;
 
 public class MenuItem {
-    String name;
-    int price;
+    private String name;
+    private int price;
 
     public MenuItem(String name, int price) {
         this.name = name;

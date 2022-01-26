@@ -1,12 +1,12 @@
 package orangefield.coffee03;
 
 public class Coffee {
-    String name;
-    int price;
+    private String name;
+    private int price;
 
     public Coffee(MenuItem menuItem) {
-        this.name = name;
-        this.price = price;
+        this.name = menuItem.getName();
+        this.price = menuItem.getPrice();
     }
 
     public String getName() {
@@ -16,5 +16,4 @@ public class Coffee {
     public int getPrice() {
         return price;
     }
-
 }

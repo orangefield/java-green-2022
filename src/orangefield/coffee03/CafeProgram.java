@@ -5,8 +5,8 @@ import java.util.List;
 
 public class CafeProgram {
     public static void main(String[] args) {
-        Customer customer = new Customer();
-        Barista barista = new Barista();
+        Customer customer = new 홍길동();
+        Barista barista = new 공유();
 
         MenuItem m1 = new MenuItem("아메리카노", 1500);
         MenuItem m2 = new MenuItem("카페라떼", 2000);
@@ -18,5 +18,8 @@ public class CafeProgram {
         items.add(m3);
         items.add(m4);
 
+        Menu menu = new Menu(items);
+        customer.order("아메리카노", menu, barista);
+        // System.out.println(barista.getName());
     }
 }

@@ -1,6 +1,5 @@
 package orangefield.coffee03;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
@@ -11,9 +10,9 @@ public class Menu {
     }
 
     public MenuItem choose(String menuName) {
-        for (MenuItem each : items) {
-            if (each.getName().equals(menuName)) {
-                return each;
+        for (MenuItem item : items) {
+            if (item.getName().equals(menuName)) {
+                return item;
             }
         }
         return null;
