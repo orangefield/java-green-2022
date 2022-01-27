@@ -9,6 +9,10 @@ abstract public class Barista {
         return coffee;
     }
 
+    // public String getName() {
+    // return name;
+    // }
+
 }
 
 class 공유 extends Barista {
