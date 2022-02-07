@@ -10,7 +10,7 @@ import com.google.gson.Gson;
 public class MainApp {
     public static void main(String[] args) {
         try {
-            String addr = "http://lalacoding.site/init/post";
+            String addr = "";
             URL url = new URL(addr);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             BufferedReader br = new BufferedReader(

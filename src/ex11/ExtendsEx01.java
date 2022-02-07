@@ -8,9 +8,9 @@ class 라면 {
 
 class 매운라면 extends 라면 {
     // int kcal = 300;
-    // String color = "노란색";
-    // String type = "국물";
-    // int kcal = 200;
+    String color = "빨간색";
+    String type = "국물";
+    int kcal = 200;
     String type2 = "고춧가루";
 }
 
@@ -24,6 +24,6 @@ public class ExtendsEx01 {
 
         라면 s3 = new 매운라면();
         // System.out.println(s3.type2); 부모를 바라보면 부모만! 보인다
-
+        System.out.println(s3.color);
     }
 }
