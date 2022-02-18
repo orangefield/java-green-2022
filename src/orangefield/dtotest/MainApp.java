@@ -4,9 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 import com.google.gson.Gson;
@@ -21,6 +19,7 @@ public class MainApp {
         System.out.println("ex) 20210125");
         String startCreateDt = sc.nextLine();
 
+        System.out.println("=========================");
         System.out.println("검색 종료일을 입력하세요");
         System.out.println("ex) 20210125");
         String endCreateDt = sc.nextLine();
@@ -38,7 +37,7 @@ public class MainApp {
             // System.out.println(dto);
 
             List<Item> result = dto.getResponse().getBody().getItems().getItem();
-            System.out.println(result);
+            // System.out.println(result);
             for (int i = 0; i < result.size(); i++) {
                 System.out.println("==============================");
                 System.out.println("누적 의심신고 검사자 : " + result.get(i).getAccExamCnt());
